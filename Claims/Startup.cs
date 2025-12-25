@@ -42,7 +42,7 @@ namespace Claims
                 options.Password.RequireUppercase = false;
                 options.Password.RequiredLength = 6;
             })
-               .AddDefaultUI(UIFramework.Bootstrap4)
+               //.AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -68,7 +68,7 @@ namespace Claims
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                //app.UseDatabaseErrorPage();
             }
             else
             {
